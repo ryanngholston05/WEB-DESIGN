@@ -39,7 +39,7 @@
     background: transparent;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
-    animation-delay: 4.5s;
+    animation-delay: 6.5s;
   }
   
   .nav-left a {
@@ -87,7 +87,7 @@
     opacity: 0;
     animation:
       fadeIn 2s ease forwards,
-      floatUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards 3s;
+      floatUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards 5s;
   }
   
   @keyframes fadeIn {
@@ -98,8 +98,10 @@
   @keyframes floatUp {
     from {
       transform: translateY(0px) scale(1);
+      opacity: 1;
     }
     to {
-      transform: translateY(-42vh) scale(0.28);
+      transform: translateY(-42vh) scale(0.3);
+      opacity: 1;
     }
   }
