@@ -6,7 +6,7 @@
   
   body {
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   
   /* Image background */
@@ -114,11 +114,11 @@
   
   @keyframes floatUp {
     from {
-      transform: translateY(0px) scale(1);
-      opacity: 1;
-    }
+        transform: translateY(-8vh) scale(1);
+        opacity: 1;
+      }
     to {
-      transform: translateY(-55vh) scale(0.3);
+        transform: translateY(-42vh) scale(0.3);
       opacity: 1;
     }
   }
