@@ -39,5 +39,30 @@
     <img src="Ceres/media/Ceres_white_logo.png" alt="Ceres" class="logo" />
   </div>
 
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="Ceres/media/photo1.jpeg" alt="Photo 1" class="carousel-slide" />
+        <img src="Ceres/media/photo2.jpeg" alt="Photo 2" class="carousel-slide" />
+        <img src="Ceres/media/photo1.jpeg" alt="Photo 3" class="carousel-slide" />
+        <img src="Ceres/media/photo2.jpeg" alt="Photo 4" class="carousel-slide" />
+      </div>
+      <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#8592;</button>
+      <button class="carousel-btn next" onclick="moveCarousel(1)">&#8594;</button>
+    </div>
+  </div>
+
+  <script>
+    let current = 0;
+  
+    function moveCarousel(direction) {
+      const slides = document.querySelectorAll('.carousel-slide');
+      const total = slides.length;
+      current = (current + direction + total) % total;
+      document.querySelector('.carousel-track').style.transform =
+        `translateX(-${current * 500}px)`;
+    }
+  </script>
+
 </body>
 </html>
