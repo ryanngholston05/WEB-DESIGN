@@ -95,7 +95,8 @@
     z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: calc(50vh - 8vh);
     pointer-events: none;
   }
   
@@ -114,9 +115,8 @@
   
   @keyframes floatUp {
     from {
-        transform: translateY(-8vh) scale(1);
-        opacity: 1;
-      }
+      transform: translateY(0px) scale(1);
+    }
     to {
         transform: translateY(-42vh) scale(0.3);
       opacity: 1;
