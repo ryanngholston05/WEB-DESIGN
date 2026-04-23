@@ -101,7 +101,7 @@ body {
 
 .dropdown-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  background: transparent;
   margin: 4px 0;
 }
 
