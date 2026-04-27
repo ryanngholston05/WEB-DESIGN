@@ -7,6 +7,8 @@
   <link rel="icon" type="image/svg+xml" href="Ceres/media/ceres_c.svg" />
   <link rel="stylesheet" href="signature.css" />
 </head>
+
+
 <body>
 
   <header class="navbar">
@@ -94,5 +96,13 @@
     </div>
   </main>
 
+  <script>
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.size-selector').querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
