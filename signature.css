@@ -168,10 +168,12 @@
 
   .products {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     gap: 60px;
-    margin-top: 50px;
-    flex-wrap: wrap;
+    margin-top: 80px;
+    flex-wrap: nowrap;
   }
   
   .product-card {
@@ -227,20 +229,22 @@
   
   .size-selector {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     margin-top: 12px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
   }
   
   .size-btn {
     background: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
     font-family: sans-serif;
     font-size: 11px;
     letter-spacing: 0.15em;
     cursor: pointer;
     padding: 0;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
   }
   
   .size-btn:hover,
