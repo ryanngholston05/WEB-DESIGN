@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white;
+  }
+  
+  /* ── Navbar ── */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px;
+    background: transparent;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .nav-left a,
+  .dropdown > a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    font-family: sans-serif;
+  }
+  
+  .nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav-center a {
+    display: block;
+  }
+  
+  .nav-logo {
+    width: 90px;
+    display: block;
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .nav-right a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .nav-right svg {
+    stroke: white;
+    fill: none;
+  }
+  
+  /* ── Dropdown ── */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    font-family: sans-serif;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu a:hover {
+    opacity: 0.6;
+  }
+  
+  .dropdown-divider {
+    height: 1px;
+    background: transparent;
+    margin: 4px 0;
+  }
+  
+  /* ── Search ── */
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  
+  .search-box {
+    width: 0;
+    opacity: 0;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    font-family: inherit;
+    outline: none;
+    padding: 2px 0;
+    transition: width 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .search-box::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .search-wrapper:hover .search-box {
+    width: 140px;
+    opacity: 1;
+  }
+  
+  /* ── Page Content ── */
+  .signature-page {
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .page-title {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    color: white;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  /* ── Fade In ── */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
