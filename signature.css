@@ -110,12 +110,10 @@
     margin: 4px 0;
   }
   
-  /* ── Search ── */
   .search-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
     gap: 10px;
   }
   
@@ -128,7 +126,7 @@
     color: white;
     font-size: 11px;
     letter-spacing: 0.15em;
-    font-family: inherit;
+    font-family: sans-serif;
     outline: none;
     padding: 2px 0;
     transition: width 0.4s ease, opacity 0.4s ease;
@@ -142,7 +140,6 @@
     width: 140px;
     opacity: 1;
   }
-  
   /* ── Page Content ── */
   .signature-page {
     padding-top: 140px;
